@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.junitsamples.asserts.AssertsTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.013 sec <<< FAILURE! - in com.junitsamples.asserts.AssertsTest
+testAll()  Time elapsed: 0.002 sec  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Uber asserts (2 failures)
+	expected: <Parati> but was: <Civic>
+	expected: <123> but was: <MLL-2222>
+	at com.junitsamples.asserts.AssertsTest.testAll(AssertsTest.java:28)
+

@@ -1,0 +1,17 @@
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/tags/CustomTag.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/assumptions/AssumptionsTest.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/parameterizedtest/ValueSourceTest.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/tags/TagsTest.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/exceptions/ExceptionTests.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/parameterizedtest/CSVSource.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/testinfo/TestInfoTest.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/asserts/AssertsTest.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/parameterinjection/ParameterInjectionTest.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/parameterizedtest/MethodSourceTest.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/parameterinjection/UberParameterResolver.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/parameterizedtest/EnumSourceTest.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/nested/NestedTests.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/extensions/TestExecutionCondition.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/beforeafter/BeforeAfterTest.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/parameterizedtest/Number.java
+/home/deivid/Programming/projects/java/junit-samples/src/test/java/com/junitsamples/repeatedtest/RepeatedTests.java
