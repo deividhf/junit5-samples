@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.junitsamples.beforeafter.BeforeAfterTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in com.junitsamples.beforeafter.BeforeAfterTest
-com.junitsamples.beforeafter.BeforeAfterTest  Time elapsed: 0.001 sec  <<< ERROR!
-org.junit.platform.commons.JUnitException: @BeforeAll method 'public void com.junitsamples.beforeafter.BeforeAfterTest.beforeAll()' must be static unless the test class is annotated with @TestInstance(Lifecycle.PER_CLASS).
-

@@ -9,7 +9,7 @@ public class EnumSourceTest {
 
 	@ParameterizedTest
 	@EnumSource(Number.class)
-	public void findById(Number number) {
+	public void isGreaterThanZero(Number number) {
 	  assertTrue(number.getNumber() > 0);
 	}
 }
