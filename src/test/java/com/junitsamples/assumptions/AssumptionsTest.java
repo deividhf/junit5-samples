@@ -11,6 +11,9 @@ import org.junit.jupiter.api.Test;
 
 public class AssumptionsTest {
 
+	/**
+	 * This test will run only on Monday.
+	 */
 	@Test
 	public void assumeTrueTest() {
 		assumeTrue(LocalDate.now().getDayOfWeek().equals(DayOfWeek.MONDAY));

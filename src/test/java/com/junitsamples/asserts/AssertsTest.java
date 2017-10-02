@@ -21,11 +21,14 @@ public class AssertsTest {
 		assertEquals("Civic", uber.getModel(), () -> "Invalid model");
 	}
 	
+	/**
+	 * This test will fail and report the two asserts that fail.
+	 */
 	@Test
 	public void testAll() {
 		PrivateCar privateCar = PrivateCar.of("Civic", "MLL-2222");
 		
-		assertAll("Uber asserts", 
+		assertAll("Private Car asserts", 
 			() -> assertEquals("Parati", privateCar.getModel()),
 			() -> assertEquals("123", privateCar.getPlate())
 		);
