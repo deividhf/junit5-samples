@@ -5,14 +5,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-import com.junitsamples.model.Uber;
+import com.junitsamples.model.PrivateCar;
 
-@ExtendWith(UberParameterResolver.class)
+@ExtendWith(PrivateCarParameterResolver.class)
 public class ParameterInjectionTest {
 
 	@Test
-	public void injectedUberTest(Uber uber) {
-		assertEquals("Marea", uber.getModel());
+	public void injectedUberTest(PrivateCar privateCar) {
+		assertEquals("Marea", privateCar.getModel());
 	}
 }
 

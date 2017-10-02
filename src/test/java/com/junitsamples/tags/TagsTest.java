@@ -5,39 +5,39 @@ import static org.junit.Assert.assertFalse;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-import com.junitsamples.model.Uber;
+import com.junitsamples.model.PrivateCar;
 
 public class TagsTest {
 
 	@Tag("development")
 	@Test
-	public void testCallUberInDevelopment() {
-		Uber uber = Uber.of("Development Uber", "MLL-2222");
-		Uber calledUber = uber.call();
-		assertFalse(calledUber.isAvailable());
+	public void testCallPrivateCarInDevelopment() {
+		PrivateCar privateCar = PrivateCar.of("Development PrivateCar", "MLL-2222");
+		PrivateCar calledPrivateCar = privateCar.call();
+		assertFalse(calledPrivateCar.isAvailable());
 	}
 	
 	@Tag("production")
 	@Test
-	public void testCallUberInProduction() {
-		Uber uber = Uber.of("Production Uber", "MLL-2222");
-		Uber calledUber = uber.call();
-		assertFalse(calledUber.isAvailable());
+	public void testCallPrivateCarInProduction() {
+		PrivateCar privateCar = PrivateCar.of("Production PrivateCar", "MLL-2222");
+		PrivateCar calledPrivateCar = privateCar.call();
+		assertFalse(calledPrivateCar.isAvailable());
 	}
 	
 	@Tag("production")
 	@Tag("development")
 	@Test
-	public void testCallUberInProductionAndDevelopment() {
-		Uber uber = Uber.of("Civic", "MLL-2222");
-		Uber calledUber = uber.call();
-		assertFalse(calledUber.isAvailable());
+	public void testCallPrivateCarInProductionAndDevelopment() {
+		PrivateCar privateCar = PrivateCar.of("Civic", "MLL-2222");
+		PrivateCar calledPrivateCar = privateCar.call();
+		assertFalse(calledPrivateCar.isAvailable());
 	}
 	
 	@CustomTag
-	public void testCallUberCustomTag() {
-		Uber uber = Uber.of("Custom Uber", "MLL-2222");
-		Uber calledUber = uber.call();
-		assertFalse(calledUber.isAvailable());
+	public void testCallPrivateCarCustomTag() {
+		PrivateCar privateCar = PrivateCar.of("Custom PrivateCar", "MLL-2222");
+		PrivateCar calledPrivateCar = privateCar.call();
+		assertFalse(calledPrivateCar.isAvailable());
 	}
 }

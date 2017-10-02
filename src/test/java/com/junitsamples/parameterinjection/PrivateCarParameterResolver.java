@@ -5,20 +5,20 @@ import org.junit.jupiter.api.extension.ParameterContext;
 import org.junit.jupiter.api.extension.ParameterResolutionException;
 import org.junit.jupiter.api.extension.ParameterResolver;
 
-import com.junitsamples.model.Uber;
+import com.junitsamples.model.PrivateCar;
 
-public class UberParameterResolver implements ParameterResolver {
+public class PrivateCarParameterResolver implements ParameterResolver {
 
 	@Override
 	public boolean supportsParameter(ParameterContext parameterContext, ExtensionContext extensionContext)
 			throws ParameterResolutionException {
-		return parameterContext.getParameter().getType() == Uber.class;
+		return parameterContext.getParameter().getType() == PrivateCar.class;
 	}
 
 	@Override
 	public Object resolveParameter(ParameterContext parameterContext, ExtensionContext extensionContext)
 			throws ParameterResolutionException {
-		return Uber.of("Marea", "MLU-3666");
+		return PrivateCar.of("Marea", "MLU-3666");
 	}
 
 }

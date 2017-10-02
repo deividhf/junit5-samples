@@ -9,7 +9,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.junitsamples.model.Uber;
+import com.junitsamples.model.PrivateCar;
 
 public class BeforeAfterTest {
 
@@ -25,10 +25,10 @@ public class BeforeAfterTest {
 	
 	@Test
 	public void newUberTest() {
-		Uber uber = Uber.of("Civic", "MLU-3333");
-		assertAll("Uber tests", 
-				() -> assertEquals("Civic", uber.getModel()),
-				() -> assertEquals("MLU-3333", uber.getPlate()));
+		PrivateCar privateCar = PrivateCar.of("Civic", "MLU-3333");
+		assertAll("Private Car tests", 
+				() -> assertEquals("Civic", privateCar.getModel()),
+				() -> assertEquals("MLU-3333", privateCar.getPlate()));
 	}
 	
 	@AfterEach

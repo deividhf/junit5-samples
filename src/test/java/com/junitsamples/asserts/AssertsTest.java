@@ -5,29 +5,29 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import com.junitsamples.model.Uber;
+import com.junitsamples.model.PrivateCar;
 
 public class AssertsTest {
 
 	@Test
 	public void assertWithoutLazyEvaluation() {
-		Uber uber = Uber.of("Civic", "MLL-2222");
-		assertEquals("Civic", uber.getModel(), "Invalid model");
+		PrivateCar privateCar = PrivateCar.of("Civic", "MLL-2222");
+		assertEquals("Civic", privateCar.getModel(), "Invalid model");
 	}
 	
 	@Test
 	public void assertWithLazyEvaluation() {
-		Uber uber = Uber.of("Civic", "MLL-2222");
+		PrivateCar uber = PrivateCar.of("Civic", "MLL-2222");
 		assertEquals("Civic", uber.getModel(), () -> "Invalid model");
 	}
 	
 	@Test
 	public void testAll() {
-		Uber uber = Uber.of("Civic", "MLL-2222");
+		PrivateCar privateCar = PrivateCar.of("Civic", "MLL-2222");
 		
 		assertAll("Uber asserts", 
-			() -> assertEquals("Parati", uber.getModel()),
-			() -> assertEquals("123", uber.getPlate())
+			() -> assertEquals("Parati", privateCar.getModel()),
+			() -> assertEquals("123", privateCar.getPlate())
 		);
 	}
 }

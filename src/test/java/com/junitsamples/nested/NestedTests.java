@@ -8,17 +8,17 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import com.junitsamples.model.Uber;
+import com.junitsamples.model.PrivateCar;
 
 public class NestedTests {
 
 	@Test
 	public void testAll() {
-		Uber uber = Uber.of("Civic", "MLL-2222");
+		PrivateCar privateCar = PrivateCar.of("Civic", "MLL-2222");
 		
-		assertAll("Uber asserts", 
-			() -> assertEquals("Civic", uber.getModel()),
-			() -> assertEquals("MLL-2222", uber.getPlate())
+		assertAll("Private Car asserts", 
+			() -> assertEquals("Civic", privateCar.getModel()),
+			() -> assertEquals("MLL-2222", privateCar.getPlate())
 		);
 	}
 	
@@ -28,9 +28,9 @@ public class NestedTests {
 		
 		@Test
 		public void testCallUber() {
-			Uber uber = Uber.of("Civic", "MLL-2222");
-			Uber calledUber = uber.call();
-			assertFalse(calledUber.isAvailable());
+			PrivateCar privateCar = PrivateCar.of("Civic", "MLL-2222");
+			PrivateCar calledPrivateCar = privateCar.call();
+			assertFalse(calledPrivateCar.isAvailable());
 		}
 		
 	}

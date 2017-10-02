@@ -7,19 +7,19 @@ import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import com.junitsamples.model.Uber;
+import com.junitsamples.model.PrivateCar;
 
 public class MethodSourceTest {
 
 	@ParameterizedTest
 	@MethodSource(value = "uberProvider")
-	public void modelStartsWithA(Uber uber) {
-	  assertTrue(uber.getModel().startsWith("M"));
+	public void modelStartsWithA(PrivateCar privateCar) {
+	  assertTrue(privateCar.getModel().startsWith("M"));
 	}
 	
-	static Stream<Uber> uberProvider() {
+	static Stream<PrivateCar> privateCarProvider() {
 	    return Stream.of(
-	    		Uber.of("Meriva", "MLY-2222"), 
-	    		Uber.of("Marea", "ZLY-3322"));
+	    		PrivateCar.of("Meriva", "MLY-2222"), 
+	    		PrivateCar.of("Marea", "ZLY-3322"));
 	}
 }
