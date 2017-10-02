@@ -14,17 +14,17 @@ import com.junitsamples.model.PrivateCar;
 public class BeforeAfterTest {
 
 	@BeforeEach
-	public void beforeEach() {
+	void beforeEach() {
 		System.out.println("Running before each test.");
 	}
 	
 	@BeforeAll
-	public void beforeAll() {
+	void beforeAll() {
 		System.out.println("Running before all test.");
 	}
 	
 	@Test
-	public void newUberTest() {
+	void newUberTest() {
 		PrivateCar privateCar = PrivateCar.of("Civic", "MLU-3333");
 		assertAll("Private Car tests", 
 				() -> assertEquals("Civic", privateCar.getModel()),
@@ -32,12 +32,12 @@ public class BeforeAfterTest {
 	}
 	
 	@AfterEach
-	public void afterEach() {
+	void afterEach() {
 		System.out.println("Running after each test.");
 	}
 	
 	@AfterAll
-	public void afterAll() {
+	void afterAll() {
 		System.out.println("Running after all tests.");
 	}
 
