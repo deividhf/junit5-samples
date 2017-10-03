@@ -8,7 +8,7 @@ public class TestExecutionCondition implements ExecutionCondition {
 
 	@Override
 	public ConditionEvaluationResult evaluateExecutionCondition(ExtensionContext context) {
-		return ConditionEvaluationResult.disabled("Because it's saturday.");
+		return ConditionEvaluationResult.disabled("Because it's a test.");
 	}
 
 }
