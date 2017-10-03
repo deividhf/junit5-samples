@@ -19,7 +19,7 @@ public class BeforeAfterTest {
 	}
 	
 	@BeforeAll
-	void beforeAll() {
+	static void beforeAll() {
 		System.out.println("Running before all test.");
 	}
 	
@@ -37,7 +37,7 @@ public class BeforeAfterTest {
 	}
 	
 	@AfterAll
-	void afterAll() {
+	static void afterAll() {
 		System.out.println("Running after all tests.");
 	}
 
